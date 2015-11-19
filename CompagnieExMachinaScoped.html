@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CompagnieExMAchina</title>
+  <link rel="stylesheet" href="CompagnieExMachinaScoped.css" media="screen" title="no title" charset="utf-8">
+</head>
+<!-- <body><div class="filter"> -->
+  <!-- <div class="filterTop"> -->
+  <!-- </div><div class="filterBot"> -->
+  <!-- </div> -->
+  <!-- <div class="filterRight"> -->
+  <!-- </div><div class="filterLeft"> -->
+  <!-- </div> -->
+
+<!-- </div> -->
+<div class="biography">
+  <h2 class="compagnieTitle">ExMachina</h2>
+  <p class="text">La machine n’est autre que le lieu de l’action : le théâtre.
+Le lieu chargé d’histoire, qui respire et vit devient alors le lieu de la fiction, duquel apparait cette chose mi-humaine, mi-divine, mi-réelle, mi-fantastique.
+Dehors, tout peut être fini. Dedans, tout peut être infini. Dans un environnement inconnu, intemporel, deux hommes s’affairent à entasser des sacs. C’est leur travail. Le lieu dans lequel ils vivent est alimenté par une machine générant un son continu, sans lequel ils ne peuvent supporter le labeur quotidien. Le temps est devenu un cycle sans fin où la routine rouille les os. Mais voilà que la vieille machine vient à se dérègler, déraille et donne naissance à une tumeur à l’apparence humaine. C’est alors la rencontre entre deux mondes ; celui des ouvriers et celui de cette femme-machine. Ils tentent de communiquer, de vivre ensemble. L’un chante, l’autre danse, ils se cherchent, retrouvent un geste d’antan, un son qu’ils ont connu et se perdent..</div>
+  <!-- <div class"container"></div>
+  <div class="laCompagnieBox"><h1 class="laCompagnie">La Compagnie</h1><p class="description"></p></div> -->
+  <div class="wrapper">
+                    <div class="sliderContainer">
+                      <div class="content">
+                        <div class="item"><img class="curtain2" src="curtainReverse.jpg" alt="1"><img src="ExMachina2.png" alt="1"></img><img class="curtain" src="curtain.jpg" alt="1"></img></img>
+                        </div>
+                        <!-- <div class="item curtain2">
+                        </div> -->
+                        <div class="item"><img class="curtain2" src="curtainReverse.jpg" alt="1"><img src="ExMachina3.png" alt="1"></img><img class="curtain" src="curtain.jpg" alt="1"></img>
+                        </div>
+                        <div class="item"><img class="curtain2" src="curtainReverse.jpg" alt="1"><img src="ExMachina4.png" alt="1"></img><img class="curtain" src="curtain.jpg" alt="1"></img>
+                        </div>
+                      </div>
+                   </div>
+  </div>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+
+  <script type="text/javascript">
+  $(function(){
+    setInterval(function(){
+       $(".content").animate({marginLeft:-138+"vw"},10000,function(){
+          $(this).css({marginLeft:0}).find("div:last").after($(this).find("div:first"));
+       })
+    }, 20000);
+  });
+  </script>
+  <!-- <div class="contact"><h2>Contact</h2></div> -->
+
+
+
+</body>
+</html>

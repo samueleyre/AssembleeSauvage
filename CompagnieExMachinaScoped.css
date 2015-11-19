@@ -1,0 +1,149 @@
+body{
+  width : 100%;
+  margin:0;
+  box-sizing: border-box;
+  /*display: inline-flex;*/
+  flex-wrap: wrap;
+  background-color: rgba(24, 6, 4, 0.7);
+}
+.biography{
+  z-index: 3;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 35.7vw;
+  height: 56vw;
+
+}
+.compagnieTitle{
+  margin: 20%;
+  margin-bottom: 0%;
+  font-size: 3vw;
+}
+.text{
+  margin: 13% 17% 0%;
+  color: rgba(255, 255, 255, 0.4);
+  font-style: italic;
+  font-size: 1vw;
+	text-align: justify;}
+/*.filter{
+  z-index: 2;
+}
+.filterTop, .filterBot{
+  z-index: 2;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 58.3vw;
+  height: 6vw;
+  margin-left: 35.7vw;
+}
+.filterRight, .filterLeft{
+  z-index: 2;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 35.7vw;
+  height: 55vw;
+}
+.filterLeft{
+  left: 0;
+}
+.filterRight{
+  right: 0;
+  width: 6vw;
+}
+.filteTop{
+  top: 0;
+}
+.filterBot{
+  top: 49vw;
+  height: 6vw;
+}*/
+
+
+
+
+.laCompagnieBox{
+  text-align: justify;
+}
+
+.laCompagnie{
+  font-style: bold;
+  font-size: 3em;
+}
+
+.description{
+  font-style: italic;
+  font-size: 1em;
+}
+/*Idea : seperate each word of p and add hover on each part for a nice effect*/
+.wrapper{
+    position :absolute;
+    margin: -3% auto;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    z-index: 0;
+    background: transparent;
+}
+.content{
+    position:absolute;
+    background: transparent;
+    top:0px;
+    left:-10px;
+    height: 56vw;
+    width: 414vw;
+    left:-33.3vw;
+}
+
+    /*animation: slider 10s;*/
+@keyframes slider{
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-114vw);
+
+  }
+}
+.item{
+  float: left;
+  width: 138vw;
+  height: 56vw;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.sliderContainer{
+  position: relative;
+  height: 59vw;
+  width: 157vw;
+  background: transparent none repeat scroll 0% 0%;
+}
+
+h2{
+  margin : 0;
+  font-size: 2em;
+}
+.item img{
+  margin: 2vw auto auto;
+  width: 69vw;
+  height: 57vw;
+  position: relative;
+  z-index: 4;
+  /*border: 5px solid rgba(24, 6, 4, 0);*/
+}
+
+.item .curtain{
+  z-index: 5;
+  opacity: 0.5;
+  margin-left: -69vw;
+}
+.curtain2 img{
+  z-index: 4;
+  opacity: 0.5;
+  /*margin-left: -129vw;*/
+}
+.item .curtain2{
+  z-index: 4;
+  opacity: 0.5;
+  /*margin-left: -69vw;*/
+}
